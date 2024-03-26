@@ -15,7 +15,7 @@ public class Computador {
     }
 
     //exibir infos do pc no menu
-    void ConfigPC (){
+    void MostraPCConfigs (){
         System.out.println("Marca: " + this.marca);
         System.out.println("Preco: " + this.preco + " reais");
         System.out.println("Config de hardware: ");
@@ -31,6 +31,7 @@ public class Computador {
 
     //adicionar uma memoria usb ao computador atual
     void addMemoriaUSB (MemoriaUSB musb) {
+
         this.memoriaUSB = musb;
     }
 

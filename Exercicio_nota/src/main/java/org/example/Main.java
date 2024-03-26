@@ -54,15 +54,15 @@ public class Main {
 
         //mostrar promoções para o usuario escolher
             System.out.println("Escolha entre os pacotes de computadores 1, 2 ou 3. Caso queira sair do menu pressione a tecla 0");
-            System.out.println("-----------------------(o˘◡˘o)-----------------------");
+            System.out.println("-----------------------Bem-vindo a PCMania (o˘◡˘o)-----------------------");
             System.out.println("Promoção 1: ");
-            PC1.ConfigPC();
+            PC1.MostraPCConfigs();
             System.out.println("-----------------------☆-----------------------");
             System.out.println("Promoção 2: ");
-            PC2.ConfigPC();
+            PC2.MostraPCConfigs();
             System.out.println("-----------------------☆-----------------------");
             System.out.println("Promoção 3: ");
-            PC3.ConfigPC();
+            PC3.MostraPCConfigs();
 
         //variavel para controle e entrada de dados
         Scanner scanner = new Scanner(System.in);
@@ -99,7 +99,12 @@ public class Main {
         System.out.println("-----------------------☆-----------------------");
         System.out.println("Numero de PCS no carrinho: " + c1.a);
         System.out.println("-----------------------☆-----------------------");
+        System.out.println("PCS Comprados: ");
+        c1.mostraPC();
+        System.out.println("-----------------------☆-----------------------");
         System.out.println("Preço total da compra: R$" + c1.vfcompra);
+        System.out.println("-----------------------☆-----------------------");
+        System.out.println("Obrigada por comprar na PCMania! (o˘◡˘o)");
         System.out.println("-----------------------☆-----------------------");
     }
 }

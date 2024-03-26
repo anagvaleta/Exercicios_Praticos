@@ -25,6 +25,21 @@ public class Cliente {
         }
     }
 
+    //mostrar as compras do usuario
+    void mostraPC(){
+        for (int i = 0; i < PC.length; i++) {
+            if(PC[i] != null){
+                System.out.println("Marca: " + PC[i].marca);
+                System.out.println("Preço: " + PC[i].preco);
+                System.out.println("Configurações:");
+                for(int j = 0; j < 3; j++){
+                    System.out.println(PC[i].HB[j].nome + " " + PC[i].HB[j].capacidade);
+                }
+
+            }
+        }
+    }
+
     //calcular o valor total da compra
     float calcularTotalCompra (float compra){
         this.vfcompra += compra;
